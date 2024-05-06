@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    color: white;
+}
+
+/* start header general*/
+
+
+/* start nav general*/
+nav {
+    box-shadow: 0 3px 3px rgba(80, 80, 80, 0.15);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(71, 71, 71);
+}
+
+nav ul li.active {
+    background-color: rgb(30, 30, 30);
+}
+
+
+/* end nav general */
+
+
+
+
+/* Start media queries */
+
+/* For Mobile */
+@media only screen and (max-width: 425px) {
+
+    /* start mobile general*/
+
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+    /* end mobile general*/
+
+    /* start mobile header*/
+
+    /* start mobile nav */
+    nav {
+        background-color: rgb(112, 178, 244);
+    }
+
+    .topnav li {
+        font-size: 1rem;
+        padding: 10px 10px;
+    }
+
+    .logo a {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        background-image: url(images/svg_content/hamburger_icon_white.svg);
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 21px;
+        display: flex;
+    }
+
+    .item {
+        width: 100%;
+        order: 1;
+        display: none;
+    }
+
+    .item.active-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* end mobile nav */
+
+    .hero-home {
+        background-image: url(images/Hero_content/ADWE_HERO_IMG3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0, 46%;
+    }
+
+    .main-hero-container {
+        padding: 10vw;
+        width: 80%;
+    }
+
+    .hero-text {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    .contact-button {
+        background: linear-gradient(to right, rgb(75, 145, 215), hwb(210 44% 4%));
+        background-color: rgb(75, 145, 215);
+        color: rgb(255, 255, 255);
+        font-size: 2.5vw;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: none;
+        padding: 11px 12px;
+        border: 0px solid #000;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .contact-button:hover {
+        background: linear-gradient(to right, rgb(108, 159, 219), rgb(133, 187, 245));
+        background-color: rgb(108, 159, 219);
+        transform: scale(1.04);
+    }
+
+    /* end mobile header*/
+
+    /* start mobile-main */
+
+    /* start mobile project-list */
+
+.project-list-background {
+    width: 100%;
+    min-height: 300px;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list-section {
+    width: 80%;
+    min-height: auto;
+    margin: 10vw;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-heading {
+    margin-top: 5vw;
+    font-size: 6vw;
+}
+
+.project-tabs {
+    width: 70vw;
+    min-height: 70vw;
+    font-size: 5vw;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin: 5vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-tabs:hover {
+    transform: scale(1.02);
+    color: white;
+    text-decoration: none;
+}
+
+.project-tabs.project1 {
+    background-image: url(images/projecten_content/madnes_content/Madnes_website_mock-up.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.project-tabs.project2 {
+    background-image: url(images/projecten_content/destroying_the_world_content/destroying_the_world.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.project-tabs.project3 {
+    background-image: url(images/projecten_content/victor_roestenberg_oudelogos/victor_roestenberg_oude_logo1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* end mobile project-list */
+
+/* start mobile about-me */
+
+.about-me-background {
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+}
+
+
+.about-me-section {
+    width: 80%;
+    margin: 10vw;
+    background-color: rgb(31, 31, 31);
+}
+
+.about-me-text {
+    margin: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-me-image {
+    width: 100%;
+    content: url(images/Hero_content/ADWE_HERO_IMG5.jpg);
+}
+
+/* end mobile about-me */
+
+/* end mobile main*/
+
+
+/* start mobile footer*/
+
+.footercentertext {
+    text-align: center;
+    font-size: 2vw;
+    background-color: rgb(112, 178, 244);
+    padding: 11px;
+}
+
+/* end mobile footer*/
+
+}
+
+/* For Tablet */
+@media only screen and (min-width: 425px) and (max-width: 769px) {
+
+    /* start tablet general*/
+
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    /* end tablet general*/
+
+    /* start header tablet*/
+
+    /* start tablet nav */
+    nav {
+        background-color: rgb(244, 112, 112);
+    }
+
+    .topnav li {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .logo a {
+        font-size: 1rem;
+    }
+
+    .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        background-image: url(images/svg_content/hamburger_icon_white.svg);
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 21px;
+        display: flex;
+    }
+
+    .item {
+        width: 100%;
+        order: 1;
+        display: none;
+    }
+
+    .item.active-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* end tablet nav */
+
+    .hero-home {
+        background-image: url(images/Hero_content/ADWE_HERO_IMG2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0, 46%;
+    }
+
+    .main-hero-container {
+        padding: 10vw;
+        width: 80%;
+    }
+
+    .hero-text {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    .contact-button {
+        background: linear-gradient(to right, rgb(244, 112, 112), hwb(210 44% 4%));
+        background-color: rgb(75, 145, 215);
+        color: rgb(255, 255, 255);
+        font-size: 1.8vw;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: none;
+        padding: 11px 12px;
+        border: 0px solid #000;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .contact-button:hover {
+        background: linear-gradient(to right, rgb(108, 159, 219), rgb(244, 112, 112));
+        background-color: rgb(108, 159, 219);
+        transform: scale(1.04);
+    }
+
+    /* end header tablet*/
+
+    /* start tablet-main */
+
+    /* start tablet project-list */
+
+    .project-list-background {
+        width: 100%;
+        min-height: 300px;
+        background-color: rgb(14, 14, 14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-list-section {
+        width: 80%;
+        min-height: auto;
+        border-radius: 8px;
+        margin: 10vw;
+        background-color: rgb(244, 112, 112);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;   
+    }
+
+    .project-heading {
+        margin-top: 4vw;
+        font-size: 5vw;
+    }
+    
+    .project-tabs {
+        width: 70vw;
+        min-height: 30vw;
+        font-size: 3vw;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+        margin: 5vw;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .project-tabs:hover {
+        transform: scale(1.02);
+        color: white;
+        text-decoration: none;
+    }
+    
+    .project-tabs.project1 {
+        background-image: url(images/projecten_content/madnes_content/Madnes_website_mock-up.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .project-tabs.project2 {
+        background-image: url(images/projecten_content/destroying_the_world_content/destroying_the_world.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .project-tabs.project3 {
+        background-image: url(images/projecten_content/victor_roestenberg_oudelogos/victor_roestenberg_oude_logo1.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* end tablet project-list */
+    
+    /* start tablet about-me */
+    
+    .about-me-background {
+        width: 100%;
+        min-height: 500px;
+        background-color: rgb(22, 22, 22);
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .about-me-section {
+        width: 80%;
+        margin: 10vw;
+        border-radius: 8px;
+        background-color: rgb(31, 31, 31);
+    }
+    
+    .about-me-text {
+        margin: 5vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .about-me-image {
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+    /* end tablet about-me */
+    
+    /* end tablet main*/
+    
+    /* start tablet footer*/
+    
+    .footercentertext {
+        text-align: center;
+        font-size: 2vw;
+        background-color: rgb(244, 112, 112);
+        padding: 11px;
+    }
+    
+    /* end tablet footer*/
+}
+
+/* For Desktop */
+@media only screen and (min-width: 769px) {
+
+    /* start desktop general*/
+
+    h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+    }
+
+    /* end desktop general*/
+
+    /* start header desktop*/
+
+    /* start desktop nav */
+
+    nav {
+        background-color: rgb(112, 178, 244);
+    }
+
+    .topnav li {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .topnav li a {
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .item {
+        display: flex;
+        justify-self: center;
+    }
+
+    .item a {
+        font-size: 14px;
+    }
+
+    /* end desktop nav */
+
+    .hero-home {
+        background-image: url(images/Hero_content/ADWE_HERO_IMG4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0, 46%;
+    }
+
+    .main-hero-container {
+        padding: 6vw;
+        width: 80%;
+    }
+
+    .hero-text {
+        font-size: small;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    .contact-button {
+        background: linear-gradient(to right, rgb(75, 145, 215), hwb(210 44% 4%));
+        background-color: rgb(75, 145, 215);
+        color: rgb(255, 255, 255);
+        font-size: 1vw;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: none;
+        padding: 11px 12px;
+        border: 0px solid #000;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .contact-button:hover {
+        background: linear-gradient(to right, rgb(108, 159, 219), rgb(133, 187, 245));
+        background-color: rgb(108, 159, 219);
+        transform: scale(1.04);
+    }
+
+    /* end header desktop*/
+
+    /* start desktop-main */
+
+    /* start desktop project-list */
+
+    .project-list-background {
+        width: 100%;
+        min-height: 300px;
+        background-color: rgb(201, 201, 201);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-list-section {
+        width: 90%;
+        min-height: auto;
+        border-radius: 8px;
+        margin: 6vw;
+        background-color: rgb(112, 178, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;  
+        flex-wrap: wrap; 
+    }
+
+    .project-heading {
+        margin: 2vw;
+        font-size: 4vw;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .project-tabs {
+        width: 20vw;
+        min-height: 20vw;
+        font-size: 3vw;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+        margin: 2vw;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .project-tabs:hover {
+        transform: scale(1.02);
+        color: white;
+        text-decoration: none;
+    }
+    
+    .project-tabs.project1 {
+        background-image: url(images/projecten_content/madnes_content/Madnes_website_mock-up.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .project-tabs.project2 {
+        background-image: url(images/projecten_content/destroying_the_world_content/destroying_the_world.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .project-tabs.project3 {
+        background-image: url(images/projecten_content/victor_roestenberg_oudelogos/victor_roestenberg_oude_logo1.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* end Desktop project-list */
+    
+    /* start Desktop about-me */
+    
+    .about-me-background {
+        width: 100%;
+        min-height: 500px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .about-me-section {
+        width: 90%;
+        margin: 6vw;
+        border-radius: 8px;
+        background-color: rgb(112, 178, 244);
+        display: flex;
+        flex-direction: row
+    }
+
+    .about-me-heading {
+        font-size: 4vw;
+    }
+    
+    .about-me-text {
+        margin: 5vw;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .about-me-image {
+        content: url(images/Hero_content/ADWE_HERO_IMG1.jpg);
+        width: 40%;
+        border-radius: 8px;
+    }
+    
+    /* end Desktop about-me */
+    
+    /* end Desktop main*/
+
+    /* start Desktop footer*/
+    
+    .footercentertext {
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgb(112, 178, 244);
+        padding: 11px;
+    }
+        
+    /* end Desktop footer*/
+
+}
+
+/* end media queries */
